@@ -1,0 +1,22 @@
+h1 {
+    font-size: 60px !important;
+    line-height: 1.15 !important;
+    margin-top: 0 !important;
+}
+
+button {
+    font-size: 22px !important;
+    background: rgb(40,176,177);
+    background-image: linear-gradient(90deg, rgba(40,176,177,1) 0%, rgba(30,171,167,1) 53%, rgba(50,255,188,1) 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+
+button:hover {
+    background-image: linear-gradient(90deg, rgba(40,176,177,1) 0%, rgba(30,171,167,1) 53%, rgba(50,255,188,1) 100%);
+    background-size: 100%;
+    color: white;
+}
