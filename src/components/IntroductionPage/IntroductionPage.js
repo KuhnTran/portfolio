@@ -6,9 +6,14 @@ const IntroductionPage = (props) =>
     return(
         <div style={{ minHeight: '100vh' }} 
             className="flex flex-column justify-center items-start pl7 mid-gray">
-            <h1>Hello, my name is Khoa.</h1>
-            <h1>I am the Developer you need.</h1>
-            <button className='pa3 bg-white ba grow'>Contact Me</button>
+            <div className='flex flex-row'>
+                <h1>Hello, my name is&nbsp;</h1>
+                <div className='gradient-text'>
+                    <h1>Khoa</h1>
+                </div>
+            </div>
+            <h1>I am the Developer you need</h1>
+            <button className='gradient-text b pa3 bg-white ba grow br3 b12'>Contact Me</button>
         </div>
     )
 }
