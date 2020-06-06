@@ -3,6 +3,7 @@ import './IntroductionPage.css';
 
 const IntroductionPage = (props) =>
 {
+    const [hovering, setHovering] = React.useState(false);
     return(
         <div style={{ minHeight: '100vh' }} 
             className="flex flex-column justify-center items-start pl7 mid-gray">
@@ -13,7 +14,12 @@ const IntroductionPage = (props) =>
                 </div>
             </div>
             <h1>I am the Developer you need</h1>
-            <button className='gradient-text b pa3 bg-white ba grow br3 b12'>Contact Me</button>
+            <button className={'b pa3 bg-white ba grow br3 b12 hover-transition'
+                + ((hovering) ? ' gradient-background' : ' gradient-text')
+                }
+                id='contact-button'
+                onMouseEnter={()=>{setHovering(true);}}
+                onMouseLeave={()=>{setHovering(false);}}>Contact Me</button>
         </div>
     )
 }
