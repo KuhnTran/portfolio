@@ -6,7 +6,7 @@ class NavigationBar extends React.Component
     componentDidMount()
     {
         anime({
-            targets: '#nav-bar',
+            targets: '',
             opacity: 1,
             backgroundColor: 'white',
             duration: 3000,
