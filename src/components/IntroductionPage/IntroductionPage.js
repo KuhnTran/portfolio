@@ -1,10 +1,22 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './IntroductionPage.scss';
+import anime from 'animejs/lib/anime.es.js'
 
 const IntroductionPage = (props) =>
-{
+{   
+    useEffect(() => {
+        anime({
+            targets: '#text-wrapper',
+            translateX: 10,
+            opacity: 1,
+            backgroundColor: 'white',
+            duration: 1000,
+            easing: 'linear',
+          });
+    });
+
     return(
-        <div style={{ minHeight: '100vh' }} 
+        <div style={{ minHeight: '100vh', opacity: 0 }} 
             className="flex flex-column 
                 mid-gray text-wrapper"
             id='text-wrapper'>
