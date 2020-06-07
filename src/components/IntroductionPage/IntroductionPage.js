@@ -19,7 +19,7 @@ const IntroductionPage = (props) =>
     return(
         <div style={{ minHeight: '100vh'}} 
             className="flex flex-column 
-                mid-gray text-wrapper"
+                mid-gray text-wrapper w-100"
             id='text-wrapper'>
             <div id='line-1' className='flex flex-row intro'>
                 <h1>Hello, my name is&nbsp;</h1>

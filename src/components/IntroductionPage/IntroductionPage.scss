@@ -5,7 +5,6 @@ h1 {
 
     line-height: 1.2 !important;
 }
-
 button {
     border-color: $theme-color;
 
@@ -13,7 +12,10 @@ button {
     -moz-transition: background-color 1s ease-in-out;
     -o-transition: background-color 1s ease-in-out;
     transition: background-color 1s ease-in-out;
+
     p {
+        font-size: 16px;
+
         -webkit-transition: color 0.5s ease-in-out;
         -moz-transition: color 0.5s ease-in-out;
         -o-transition: color 0.5s ease-in-out;
@@ -23,15 +25,15 @@ button {
             font-size: 22px !important;
         }
     }
-}
-
-button:hover {
-    color: white;
-    background-color: $theme-color;
+    
+    &:hover {
+        color: white;
+        background-color: $theme-color;
+    }
 }
 
 .text-wrapper {
-    position: relative; 
+    position: absolute; 
     left: 0px;
 
     justify-content: center;
@@ -39,7 +41,7 @@ button:hover {
 
     text-align: start; 
     h1 {
-        font-size: 30px;
+        font-size: 20px;
     }
     
     @media only screen and (min-width: $medium) {
