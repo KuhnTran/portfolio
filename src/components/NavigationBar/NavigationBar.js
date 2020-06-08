@@ -15,6 +15,7 @@ class NavigationBar extends React.Component
             backgroundCOlor: '#FFF',
       });
     }
+    
     render() {
     return (
             <nav className='flex flex-row-reverse mid-gray sticky'>            

@@ -12,9 +12,6 @@ import 'tachyons'
 
 function App() {
 
-
-
-
   return (
     <div className="App">
       <NavigationBar/>
