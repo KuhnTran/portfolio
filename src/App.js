@@ -2,8 +2,13 @@ import React from 'react';
 import './App.css';
 import IntroductionPage from './components/IntroductionPage/IntroductionPage.js'
 import NavigationBar from './components/NavigationBar/NavigationBar.js'
+import AboutMePage from './components/AboutMePage/AboutMePage.js'
+import ProjectsPage from './components/ProjectsPage/ProjectPage.js'
+import AwardsPage from './components/AwardsPage/AwardsPage.js'
+import ContactFooter from './components/ContactFooter/ContactFooter.js'
+
 import 'tachyons'
-import anime from 'animejs/lib/anime.es.js'
+
 
 function App() {
 
@@ -12,8 +17,12 @@ function App() {
 
   return (
     <div className="App">
-      <NavigationBar id='introduction-text'/>
+      <NavigationBar/>
       <IntroductionPage/>
+      <AboutMePage/>
+      <ProjectsPage/>
+      <AwardsPage/>
+      <ContactFooter/>
     </div>
   );
 }

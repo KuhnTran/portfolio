@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import './NavigationBar.scss'
 import anime from 'animejs/lib/anime.es.js'
 
@@ -10,7 +10,7 @@ class NavigationBar extends React.Component
             targets: '.nav-button',
             opacity: 1,
             backgroundColor: 'white',
-            duration: 1000,
+            duration: 2000,
             easing: 'linear',
             backgroundCOlor: '#FFF',
       });
