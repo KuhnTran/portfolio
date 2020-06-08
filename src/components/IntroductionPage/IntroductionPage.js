@@ -19,7 +19,7 @@ const IntroductionPage = (props) =>
     return(
         <div style={{ minHeight: '100vh'}} 
             className="flex flex-column 
-                mid-gray text-wrapper w-100"
+                mid-gray text-wrapper"
             id='text-wrapper'>
             <div id='line-1' className='flex flex-row intro'>
                 <h1>Hello, my name is&nbsp;</h1>
@@ -29,8 +29,8 @@ const IntroductionPage = (props) =>
             </div>
             <h1 className='intro'>I am the Developer you need</h1>
             <button className='b mv3 pa3 bg-white ba pointer 
-                br3 b12 theme-color intro'>
-                <p className='ma0 pa0'>Contact Me</p>
+                br3 b12 theme-color intro whiteBackground'>
+                <p className='ma0 pa0'>Find out more</p>
             </button>
         </div>
     )

@@ -3,17 +3,56 @@
 #about-wrapper {
     background-image: linear-gradient(90deg, rgba(0,146,147,1) 0%, rgba(43,172,168,1) 52%, rgba(0,209,200,1) 100%);
 
-    
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-
     h1 {
-        font-size: 50px;
+        font-size: $section-header-small;
     }
 
     p {
         max-width: 500px;
 
-        font-size: 22px;
+        font-size: $paragraph-small;
+    }
+
+    @media only screen and (min-width: $medium) {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+
+        h1 {
+            font-size: $section-header;
+        }
+
+        p {
+            font-size: $paragraph;
+        }
+    }
+}
+
+#text-wrapper.about {
+    @media only screen and (min-width: $medium) {
+        align-items: flex-start;
+    }
+}
+
+#content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding-bottom: 0;
+
+    @media only screen and (min-width: $medium) {
+        flex-direction: row;
+        padding-bottom: 16rem;
+    }
+}
+
+#resume-button {
+    font-size: $paragraph-small;
+    color: $theme-color;
+
+    border-color: $theme-color;
+    @media only screen and (min-width: $medium) {
+        font-size: $paragraph;
     }
 }
