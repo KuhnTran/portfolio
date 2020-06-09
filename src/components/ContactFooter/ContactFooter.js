@@ -5,7 +5,7 @@ const ContactFooter = (props) =>
 {
     return (
         <div id='contact-wrapper'>
-            <h1 className='white pt6'>CONTACT</h1>
+            <h1 className='white'>CONTACT</h1>
         </div>
     )
 }

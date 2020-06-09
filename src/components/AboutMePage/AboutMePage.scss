@@ -55,6 +55,7 @@
 #resume-button {
     font-size: $paragraph-small;
     color: $theme-color;
+    padding: 0.7em;
 
     border-color: $theme-color;
     @media only screen and (min-width: $medium) {

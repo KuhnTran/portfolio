@@ -19,7 +19,7 @@ class NavigationBar extends React.Component
     render() {
     return (
             <nav className='flex flex-row-reverse mid-gray sticky'>            
-                <h2 onClick={()=>{console.log('cliecked')}} className='nav-button pointer'>Awards & Merits</h2>
+                <h2 onClick={()=>{console.log('cliecked')}} className='nav-button pointer'>Contact</h2>
                 <h2 onClick={()=>{console.log('cliecked')}} className='nav-button pointer'>Portfolio</h2>
                 <h2 onClick={()=>{console.log('cliecked')}} className='nav-button pointer'>About Me</h2>
                 <h2 onClick={()=>{console.log('cliecked')}} className='nav-button pointer'>Hello World</h2>
