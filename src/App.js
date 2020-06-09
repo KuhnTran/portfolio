@@ -6,6 +6,8 @@ import AboutMePage from './components/AboutMePage/AboutMePage.js'
 import ProjectsPage from './components/ProjectsPage/ProjectPage.js'
 import AwardsPage from './components/AwardsPage/AwardsPage.js'
 import ContactFooter from './components/ContactFooter/ContactFooter.js'
+import LinkFooter from './components/LinkFooter/LinkFooter.js'
+
 
 import 'tachyons'
 
@@ -19,7 +21,9 @@ function App() {
       <AboutMePage/>
       <ProjectsPage/>
       <AwardsPage/>
+
       <ContactFooter/>
+      <LinkFooter/>
     </div>
   );
 }
