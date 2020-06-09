@@ -1,0 +1,39 @@
+@import '../../general/generalVariables.scss';
+
+#project-content {
+    display: flex;
+    flex-direction: column;
+
+    @media only screen and (min-width: $large) {
+        flex-direction: row;
+    }
+}
+
+#description {
+    font-size: $paragraph-small;
+    max-width: 600px;
+
+    @media only screen and (min-width: $medium) {
+        font-size: $paragraph;
+    }
+}
+
+.whiteBackground {
+    color: $theme-color;
+    background-color: white;
+}
+
+#source-button {
+    background-color: white;
+    border-width: 0;
+
+    color: $theme-color;
+}
+
+#project-img {
+    height: auto;
+
+    @media only screen and (min-width: $large) {
+        max-width: 50vw;
+    }
+}

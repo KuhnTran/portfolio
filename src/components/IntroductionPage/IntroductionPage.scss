@@ -32,6 +32,17 @@ button.whiteBackground {
     }
 }
 
+#line-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    @media only screen and (min-width: $medium) {
+        flex-direction: row;
+    }
+}
+
 .text-wrapper {
     margin-left: 0px;
 
@@ -57,7 +68,7 @@ button.whiteBackground {
         margin-left: 10%;
 
         h1 {
-            font-size: 70px;
+            font-size: 60px;
         }
     }
 
@@ -69,4 +80,5 @@ button.whiteBackground {
 
 .intro {
     opacity: 0;
+    text-align: center;
 }
