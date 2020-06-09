@@ -16,6 +16,7 @@ function App() {
 
   return (
     <div className="App">
+
       <NavigationBar/>
       <IntroductionPage/>
       <AboutMePage/>

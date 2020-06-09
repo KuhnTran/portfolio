@@ -6,7 +6,7 @@ const ProjectsPage = (props) =>
     return (
         <div>
             <div className='mt4 flex flex-column items-center mid-gray'>
-                <h1>PROJECTS</h1>
+                <h1 id='project-header'>PROJECTS</h1>
                 <div id='project-content' className='ma4'>
                     <div className='flex flex-column'>
                         <h2>Facial Recognition WebApp</h2>
