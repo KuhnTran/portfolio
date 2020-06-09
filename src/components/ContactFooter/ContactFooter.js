@@ -1,12 +1,12 @@
 import React from 'react'
 import './ContactFooter.scss'
-
+import Fade from 'react-reveal/Fade'
 const ContactFooter = (props) =>
 {
     return (
         <div id='contact-wrapper'>
-            <h1 className='white'>CONTACT</h1>
-            <form id='contact-form' 
+            <Fade bottom><h1 className='white'>CONTACT</h1></Fade>
+            <Fade left big><form id='contact-form' 
                 className='flex flex-column items-center pa4 white b'>
                 <div>
                 <div className='flex flex-column'>
@@ -28,12 +28,12 @@ const ContactFooter = (props) =>
                 <div>
                 <div className='flex flex-column'>
                     <label>Message</label>
-                    <textarea cols='18' rows='5'></textarea>
+                    <textarea cols='24' rows='5'></textarea>
                 </div>
 
                 <button id='submit-button' className='ba ma2 pa2 br3 b pointer grow'>Submit</button>
                 </div>
-            </form>
+            </form></Fade>
         </div>
     )
 }
