@@ -11,13 +11,40 @@
     h1 {
         font-size: $section-header-small;
     }
-    @media only screen and (min-width: $medium) {
-        -webkit-clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
-        clip-path: polygon(0 0, 100% 80%, 100% 100%, 0 100%);
 
-        padding-top: 5em;
+    #contact-form {
+        display: flex;
+        flex-direction: column;
+
+        text-align: start;
+
+        div {
+            padding: 0.5em;
+        }
+    }
+
+    @media only screen and (min-width: $medium) {
+        -webkit-clip-path: polygon(0 0, 100% 40%, 100% 100%, 0 100%);
+        clip-path: polygon(0 0, 100% 40%, 100% 100%, 0 100%);
+
+        padding-top: 7em;
+
         h1 {
             font-size: $section-header;
         }
+
+        #contact-form {
+            flex-direction: row;
+            justify-content: center;
+
+            textarea {
+                width: 450px;
+                height: 100px;
+            }
+        }
     }
+}
+
+#submit-button {
+    color: $theme-color;
 }
