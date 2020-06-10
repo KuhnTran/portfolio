@@ -8,9 +8,7 @@ import AwardsPage from './components/AwardsPage/AwardsPage.js'
 import ContactFooter from './components/ContactFooter/ContactFooter.js'
 import LinkFooter from './components/LinkFooter/LinkFooter.js'
 
-
 import 'tachyons'
-
 
 function App() {
 
@@ -18,13 +16,16 @@ function App() {
     <div className="App">
 
       <NavigationBar/>
+
       <IntroductionPage/>
+
       <AboutMePage/>
       <ProjectsPage/>
       <AwardsPage/>
 
       <ContactFooter/>
       <LinkFooter/>
+
     </div>
   );
 }
