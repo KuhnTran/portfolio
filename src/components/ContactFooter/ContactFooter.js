@@ -1,8 +1,11 @@
 import React from 'react'
 import './ContactFooter.scss'
 import Fade from 'react-reveal/Fade'
+import { useAlert } from 'react-alert'
+
 const ContactFooter = (props) =>
 {
+    const alert = useAlert();
     return (
         <div id='contact-wrapper'>
             <Fade bottom><h1 className='white'>CONTACT</h1></Fade>
@@ -31,7 +34,8 @@ const ContactFooter = (props) =>
                     <textarea cols='24' rows='5'></textarea>
                 </div>
 
-                <button id='submit-button' className='ba ma2 pa2 br3 b pointer grow'>Submit</button>
+                <button id='submit-button' className='ba ma2 pa2 br3 b pointer grow'
+                    type='reset' onClick={()=>{alert.show('This is an alert');}}>Submit</button>
                 </div>
             </form></Fade>
         </div>
