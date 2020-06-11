@@ -11,16 +11,46 @@
     display: flex;
     flex-direction: column;
 
-    button{
+    a{
         font-size: $paragraph-small;
     }
 
     @media only screen and (min-width: $large) {
         flex-direction: row;
         
-        button {
+        a {
             font-size: $paragraph;
         }
+    }
+}
+
+a.whiteBackground {
+    border-color: $theme-color;
+
+    -webkit-transition: background-color 1s ease-in-out;
+    -moz-transition: background-color 1s ease-in-out;
+    -o-transition: background-color 1s ease-in-out;
+    transition: background-color 1s ease-in-out;
+
+    text-decoration: none;
+    
+    p {
+        font-size: $paragraph-small;
+
+
+        -webkit-transition: color 0.5s ease-in-out;
+        -moz-transition: color 0.5s ease-in-out;
+        -o-transition: color 0.5s ease-in-out;
+        transition: color 0.5s ease-in-out;
+
+        @media only screen and (min-width: $medium) {
+            font-size: $paragraph !important;
+        }
+    }
+    
+    &:hover {
+        color: white;
+        background-color: $theme-color;
     }
 }
 
@@ -42,7 +72,11 @@
     background-color: white;
     border-width: 0;
 
+    text-decoration: none;
+
     color: $theme-color;
+    
+    padding: 0.7em;
 }
 
 #project-img {
