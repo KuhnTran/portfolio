@@ -3,8 +3,9 @@ import profilePicture from './../../assets/profilePicture.jpg'
 import './AboutMePage.scss'
 import Fade from 'react-reveal/Fade'
 
-const AboutMePage = (props) =>
+class AboutMePage extends React.Component
 {
+    render() {
     return (
         <div id='about-wrapper' className='flex flex-column items-center white'>
             <Fade bottom><h1 className='pa4'>ABOUT ME</h1></Fade>
@@ -18,6 +19,7 @@ const AboutMePage = (props) =>
             </div>
         </div>
     )
+    }
 }
 
 export default AboutMePage;

@@ -9,7 +9,10 @@ const LinkFooter = (props) =>
 {
     return (
         <div className='pa4 bg-dark-gray flex flex-column items-center'>
-            <img src={ToTopLogo} alt='to top' width='48' height='48' className='grow pointer'></img>
+            <button onClick={props.toTop}
+                className='bg-dark-gray b--dark-gray shadow-0 ba grow pointer'>
+                <img src={ToTopLogo} alt='to top' width='48' height='48'></img>
+                </button>
             <p id='name-text' className='white'>Harry Khoa Tran<br/>Fullstack & Software Developer </p>
             <div id='logo-wrapper' className='pa3 flex justify-center'>
                 <a href='https://www.facebook.com/tommy.tran.313924'>

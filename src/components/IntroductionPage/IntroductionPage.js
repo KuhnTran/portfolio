@@ -1,10 +1,10 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import './IntroductionPage.scss';
 import anime from 'animejs/lib/anime.es.js'
-
-const IntroductionPage = (props) =>
+ 
+class IntroductionPage extends React.Component 
 {   
-    useEffect(() => {
+    componentDidMount() {
         anime({
             targets: '.intro',
             translateY: -20,
@@ -14,8 +14,9 @@ const IntroductionPage = (props) =>
             easing: 'linear',
             delay: (el, i, l) => { return i*500; }
           });
-    });
+    }
 
+    render() {
     return(
         <div style={{ minHeight: '100vh'}} 
             className="flex flex-column 
@@ -29,11 +30,13 @@ const IntroductionPage = (props) =>
             </div>
             <h1 className='intro'>I am the Developer you need</h1>
             <button className='b mv3 pa3 bg-white ba pointer 
-                br3 b12 theme-color intro whiteBackground'>
+                br3 b12 theme-color intro whiteBackground'
+                onClick={this.props.toAboutMe}>
                 <p className='ma0 pa0'>Find out more</p>
             </button>
         </div>
     )
+    }
 }
 
 
