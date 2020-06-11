@@ -16,22 +16,31 @@ const ContactFooter = (props) =>
 
     const onSubmit = () =>
     {
-        const success = true;
-        if (success)
-        {
-        alert.show(<div id='alert-message'>
-            Hello {contactName}, thank you for reaching out to me! <br/>
-            Your message has been successfully received! <br/>
-            I will try to get back to you ASAP via {contact}! <br/>
-            Have a nice day!
-        </div>);
-        console.log('Name: ' + contactName + '\n' + 'Contact: ' + contact  + '\n' + 'Message: ' + message);
-        }
-        else alert.show(<div id='alert-message'>Hello {contactName}, thank you for reaching out to me!<br/>
-            Unfortunately, your message was not received.<br/>
-            Please try again later. <br/>
-            I am terribly sorry for the inconvenience.<br/>
-            Have a nice day!</div>)
+        fetch('https://vast-waters-61272.herokuapp.com/new-message/', 
+            {
+                method: 'POST',
+                mode: 'cors',
+                cache: 'no-cache',
+                credentials: 'same-origin',
+                headers: {
+                    'Content-Type' : 'application/json'
+                },
+                body: JSON.stringify({name: contactName, contact: contact, message: message})
+            }).then((res) => {
+                alert.show(<div id='alert-message'>
+                Hello {contactName}, thank you for reaching out to me! <br/>
+                Your message has been successfully received! <br/>
+                I will try to get back to you ASAP via {contact}! <br/>
+                Have a nice day!
+                </div>);
+            }).catch(err => {
+                alert.show(<div id='alert-message'>Hello {contactName}, thank you for reaching out to me!<br/>
+                Unfortunately, your message was not received.<br/>
+                Please try again later. <br/>
+                I am terribly sorry for the inconvenience.<br/>
+                Have a nice day!</div>);
+                console.log(err);
+            })
     }
 
     return (
