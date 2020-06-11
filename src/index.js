@@ -15,6 +15,7 @@ const options = {
 }
 const customAlertStyle = {
   width: '400px',
+  maxWidth: '80vw',
   borderRadius: '10px',
   backgroundColor: '#333333',
   color: 'white',
