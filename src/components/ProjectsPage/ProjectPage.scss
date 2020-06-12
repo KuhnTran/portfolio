@@ -1,17 +1,10 @@
 @import '../../general/generalVariables.scss';
-#project-header {
-    font-size: $section-header-small;
-
-    @media only screen and (min-width: $medium) {
-        font-size: $section-header;
-    }
-}
 
 #project-content {
     display: flex;
     flex-direction: column;
 
-    a{
+    a {
         font-size: $paragraph-small;
     }
 

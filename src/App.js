@@ -8,6 +8,7 @@ import LinkFooter from './components/LinkFooter/LinkFooter.js'
 import anime from 'animejs'
 import 'tachyons'
 export default class App extends React.Component {
+
   aboutMePage = createRef();
   projectsPage = createRef();
   contactFooter = createRef();
@@ -26,6 +27,7 @@ export default class App extends React.Component {
           behavior: "smooth"
         });
     },
+
     toProjects: () => {
       window.scrollTo(
         {
@@ -34,6 +36,7 @@ export default class App extends React.Component {
           behavior: "smooth"
         });
     },
+    
     toContact: () => {
       window.scrollTo(
         {

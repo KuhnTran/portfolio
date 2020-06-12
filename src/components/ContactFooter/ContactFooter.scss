@@ -8,10 +8,6 @@
 
     text-align: center;
 
-    h1 {
-        font-size: $section-header-small;
-    }
-
     #contact-form {
         display: flex;
         flex-direction: column;
@@ -28,10 +24,6 @@
         clip-path: polygon(0 0, 100% 35%, 100% 100%, 0 100%);
 
         padding-top: 7em;
-
-        h1 {
-            font-size: $section-header;
-        }
 
         #contact-form {
             flex-direction: row;

@@ -1,5 +1,23 @@
 @import './general/generalVariables.scss';
 
+h1 {
+    font-size: $section-header-small;
+    
+    @media only screen and (min-width: $medium)
+    {
+        font-size: $section-header;
+    }
+}
+
+p {
+    font-size: $paragraph-small;
+    
+    @media only screen and (min-width: $medium)
+    {
+        font-size: $paragraph;
+    }
+}
+
 .sticky {
     position: fixed;
     top: 0;

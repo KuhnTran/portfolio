@@ -7,7 +7,7 @@ const ProjectsPage = (props) =>
 {
     return (
         <div className='mt4 flex flex-column items-center mid-gray'>
-            <Fade to big><h1 id='project-header'>PROJECTS</h1></Fade>
+            <Fade to big><h1>PROJECTS</h1></Fade>
 
             {/*==========================First Project==================*/}
             <div id='project-content' className='ma4'>

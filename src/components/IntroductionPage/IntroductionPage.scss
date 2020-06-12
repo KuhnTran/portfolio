@@ -14,16 +14,10 @@ button.whiteBackground {
     transition: background-color 1s ease-in-out;
 
     p {
-        font-size: $paragraph-small;
-
         -webkit-transition: color 0.5s ease-in-out;
         -moz-transition: color 0.5s ease-in-out;
         -o-transition: color 0.5s ease-in-out;
         transition: color 0.5s ease-in-out;
-
-        @media only screen and (min-width: $medium) {
-            font-size: $paragraph !important;
-        }
     }
     
     &:hover {
@@ -50,18 +44,11 @@ button.whiteBackground {
     align-items: center;
 
     text-align: start; 
-    h1 {
-        font-size: $section-header-small;
-    }
     
     @media only screen and (min-width: $medium) {
         margin-left: 5%;
 
         align-items: flex-start;
-
-        h1 {
-        font-size: $section-header;
-        }
     }
 
     @media only screen and (min-width: $large) {
