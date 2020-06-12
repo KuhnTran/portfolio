@@ -1,5 +1,5 @@
 import React from 'react'
-import facial_recognition from './../../assets/facial_recognition.png'
+import facialRecognitionImg from './../../assets/facial_recognition.png'
 import './ProjectPage.scss'
 import Fade from 'react-reveal/Fade'
 
@@ -13,7 +13,7 @@ const ProjectsPage = (props) =>
             <div id='project-content' className='ma4'>
                 <div className='flex flex-column'>
                     <Fade left><h2>Facial Recognition WebApp</h2></Fade>
-                    <Fade left><p id='description'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.</p></Fade>
+                    <Fade left><p id='description'>{facialDescription}</p></Fade>
                     <Fade bottom big><div className='flex flex-row'>
                         <a className='whiteBackground ba pa3 b br3 ma1 pointer'
                             href='https://obscure-gorge-95036.herokuapp.com/'>Live Demo</a>
@@ -22,12 +22,16 @@ const ProjectsPage = (props) =>
                     </div></Fade>
                 </div>
                 <div className='flex flex-column justify-center items-center'>
-                <Fade right big><img id='project-img' className='shadow-3 grow' src={facial_recognition} alt='Facial Recognition App' width='700' heigh='auto'></img></Fade>
+                <Fade right big><img id='project-img' className='shadow-3 grow' 
+                    src={facialRecognitionImg} alt='Facial Recognition App' 
+                    width='700' heigh='auto'></img></Fade>
                 </div>
             </div>
 
         </div>
     )
 }
+
+const facialDescription = `This fullstack webapp is built using React. It detects the faces that are within the image links which the users provide and logs the number of entries they have made. This is possible thanks to the Express.js backend server communicating with postgreSQL to store each user's information, protecting it using Bcrypt encryption. Both the frontend webapp and the backend server are hosted on Heroku.`
 
 export default ProjectsPage;

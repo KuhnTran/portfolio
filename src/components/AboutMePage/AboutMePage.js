@@ -23,6 +23,6 @@ class AboutMePage extends React.Component
 }
 
 const name = 'Harry';
-const aboutMeMessage = `Coming to the USA in 2014, Harry chose Computer Science to pursue as his career. He started going to Orange Coast College, where he received the Basil Peterson Scholarship for academic excellence. Transfering to the University of California, Irvine in 2017, ${name} chose to specialize in System and Software. Graduating from UC Irvine with Latin Honor, ${name} started his career by becoming a freelance Developer.`
+const aboutMeMessage = `Coming to the USA in 2014, Harry chose Computer Science to pursue as his career. He started going to Orange Coast College, where he received the Basil Peterson Scholarship for academic excellence. Transfering to the University of California, Irvine in 2017, ${name} chose to specialize in System and Software. Graduating from UC Irvine with Latin Honor, ${name} started his career by becoming a freelance Developer. \n On the side, ${name} plays the piano, giving him his artistic taste. His professionalism as well as attention to details guarantee to satisfy his clients.`
 
 export default AboutMePage;
