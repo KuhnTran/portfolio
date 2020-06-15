@@ -1,5 +1,6 @@
 import React from 'react'
 import facialRecognitionImg from './../../assets/facial_recognition.png'
+import webGLProjectImg from './../../assets/WebGLProject.JPG'
 import './ProjectPage.scss'
 import Fade from 'react-reveal/Fade'
 
@@ -42,7 +43,7 @@ const ProjectsPage = (props) =>
                 </div>
                 <div className='flex flex-column justify-center items-center'>
                 <Fade right big><img id='project-img' className='shadow-3 grow' 
-                    src={facialRecognitionImg} alt='Facial Recognition App' 
+                    src={webGLProjectImg} alt='Facial Recognition App' 
                     width='700' heigh='auto'></img></Fade>
                 </div>
             </div>
