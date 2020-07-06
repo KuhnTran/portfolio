@@ -1,19 +1,20 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.cb65985b.chunk.css",
-    "main.js": "/portfolio/static/js/main.c5763ae8.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.c5763ae8.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.ddae48b3.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.ddae48b3.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.2b4acc3b.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.2b4acc3b.js.map",
     "static/css/2.3c03f26f.chunk.css": "/portfolio/static/css/2.3c03f26f.chunk.css",
-    "static/js/2.37f1d460.chunk.js": "/portfolio/static/js/2.37f1d460.chunk.js",
-    "static/js/2.37f1d460.chunk.js.map": "/portfolio/static/js/2.37f1d460.chunk.js.map",
+    "static/js/2.1ce3ddb9.chunk.js": "/portfolio/static/js/2.1ce3ddb9.chunk.js",
+    "static/js/2.1ce3ddb9.chunk.js.map": "/portfolio/static/js/2.1ce3ddb9.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.65b6e212e5bfa48896a631bdb646c3e7.js": "/portfolio/precache-manifest.65b6e212e5bfa48896a631bdb646c3e7.js",
+    "precache-manifest.b7ed7aca74cafe477a3e0048dd304fc9.js": "/portfolio/precache-manifest.b7ed7aca74cafe477a3e0048dd304fc9.js",
     "service-worker.js": "/portfolio/service-worker.js",
     "static/css/2.3c03f26f.chunk.css.map": "/portfolio/static/css/2.3c03f26f.chunk.css.map",
     "static/css/main.cb65985b.chunk.css.map": "/portfolio/static/css/main.cb65985b.chunk.css.map",
-    "static/js/2.37f1d460.chunk.js.LICENSE.txt": "/portfolio/static/js/2.37f1d460.chunk.js.LICENSE.txt",
+    "static/js/2.1ce3ddb9.chunk.js.LICENSE.txt": "/portfolio/static/js/2.1ce3ddb9.chunk.js.LICENSE.txt",
+    "static/media/AssetmanagementProject.JPG": "/portfolio/static/media/AssetmanagementProject.4040bacc.JPG",
     "static/media/WebGLProject.JPG": "/portfolio/static/media/WebGLProject.86ed17a1.JPG",
     "static/media/facial_recognition.png": "/portfolio/static/media/facial_recognition.3fe95b4b.png",
     "static/media/github-logo-white.png": "/portfolio/static/media/github-logo-white.69540908.png",
@@ -23,8 +24,8 @@
   "entrypoints": [
     "static/js/runtime-main.2b4acc3b.js",
     "static/css/2.3c03f26f.chunk.css",
-    "static/js/2.37f1d460.chunk.js",
+    "static/js/2.1ce3ddb9.chunk.js",
     "static/css/main.cb65985b.chunk.css",
-    "static/js/main.c5763ae8.chunk.js"
+    "static/js/main.ddae48b3.chunk.js"
   ]
 }
