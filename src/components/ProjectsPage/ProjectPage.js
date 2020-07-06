@@ -1,6 +1,7 @@
 import React from 'react'
 import facialRecognitionImg from './../../assets/facial_recognition.png'
 import webGLProjectImg from './../../assets/WebGLProject.JPG'
+import AssetManagementProjectImg from './../../assets/AssetmanagementProject.JPG'
 import './ProjectPage.scss'
 import Fade from 'react-reveal/Fade'
 
@@ -48,10 +49,27 @@ const ProjectsPage = (props) =>
                 </div>
             </div>
 
+            {/*==========================Third Project==============================*/}
+            <div id='project-content' className='ma4'>
+                <div className='flex flex-column'>
+                    <Fade left><h2>Asset Management Project</h2></Fade>
+                    <Fade left><p id='description'>{AssetManagementDescription}</p></Fade>
+                    <Fade bottom big><div className='flex flex-row'>
+                    </div></Fade>
+                </div>
+                <div className='flex flex-column justify-center items-center'>
+                <Fade right big><img id='project-img' className='shadow-3 grow' 
+                    src={AssetManagementProjectImg} alt='Facial Recognition App' 
+                    width='700' heigh='auto'></img></Fade>
+                </div>
+            </div>
+
+
         </div>
     )
 }
 
 const facialDescription = `This fullstack webapp is built using React. It detects the faces that are within the image links which the users provide and logs the number of entries they have made. This is possible thanks to the Express.js backend server communicating with postgreSQL to store each user's information, protecting it using Bcrypt encryption. Both the frontend webapp and the backend server are hosted on Heroku.`
 const webGLProjectDescription = `This project's goal is to create a simple scene using WebGL. This is the final project of CS112 - Introduction to Computer Graphics class. Concepts of Computer Graphics such as simple modelling, model transformations, view transformation, animating, shading, lighting are demonstrated.`
+const AssetManagementDescription = `This project's goal is to keep the count of the devices used at an Amazon Fullfilment Center. It introduces a simple device check-out, check-in mechanism that associate must perform at the start and end of the shift in order to get a device to work with such as a laptop. This mechanism prevents the loss of valuable assets of the warehouse.`;
 export default ProjectsPage;
