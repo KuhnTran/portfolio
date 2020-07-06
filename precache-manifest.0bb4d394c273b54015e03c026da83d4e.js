@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f94b1f31c4ca43d5c954403c594d9577",
+    "revision": "7a081bba1d7af2106086984a27213159",
     "url": "/portfolio/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/css/2.3c03f26f.chunk.css"
   },
   {
-    "revision": "b38bd183fd378c33cd51",
+    "revision": "f82522601cfcfecad0fc",
     "url": "/portfolio/static/css/main.cb65985b.chunk.css"
   },
   {
@@ -20,16 +20,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/js/2.1ce3ddb9.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b38bd183fd378c33cd51",
-    "url": "/portfolio/static/js/main.ddae48b3.chunk.js"
+    "revision": "f82522601cfcfecad0fc",
+    "url": "/portfolio/static/js/main.db62e698.chunk.js"
   },
   {
     "revision": "01285987c7848eb279a5",
     "url": "/portfolio/static/js/runtime-main.2b4acc3b.js"
   },
   {
-    "revision": "4040bacca1d29d91560ae0cebefc591c",
-    "url": "/portfolio/static/media/AssetmanagementProject.4040bacc.JPG"
+    "revision": "f875fd02e1a3e5c4d3eca83227c92d74",
+    "url": "/portfolio/static/media/AssetmanagementProject.f875fd02.JPG"
   },
   {
     "revision": "86ed17a1ace0078cf9ad2451cb3d163b",
